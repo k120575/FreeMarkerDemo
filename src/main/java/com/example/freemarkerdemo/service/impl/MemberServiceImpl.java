@@ -17,17 +17,17 @@ public class MemberServiceImpl implements MemberService {
     MemberRepository memberRepository;
 
     @Override
-    public ModelAndView addMember(String name, String password, Integer level) {
+    public String addMember(String name, String password, Integer level) {
         Member member = memberRepository.findByName(name);
         if (Objects.isNull(member)){
             Member member1 = new Member(name, password, level);
             member1.setCreateTime(LocalDateTime.now());
             memberRepository.saveAndFlush(member1);
+            return "redirect:/login";
         } else {
             ModelAndView modelAndView = new ModelAndView();
             modelAndView.addObject("errorMsg", "註冊過了");
-            return modelAndView;
+            return modelAndView.toString();
         }
-        return null;
     }
 }

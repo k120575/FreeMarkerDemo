@@ -6,5 +6,5 @@ import org.springframework.web.servlet.ModelAndView;
 @Service
 public interface MemberService {
 
-    ModelAndView addMember(String name, String password, Integer level);
+    String addMember(String name, String password, Integer level);
 }

@@ -41,10 +41,29 @@
                 <!--<div id="hint"></div>-->
                 <#--            <button class="btn btn-primary btn-lg btn-block" type="button"  onclick="/addMember">註冊</button>-->
                 <form action="/demo/addMember" method="post">
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="註冊">
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="註冊" onclick="check()">
                 </form>
             </div>
         </form>
+        <script type="text/javascript" language="JavaScript">
+            function check(){
+                var name = document.getElementsByName('name');
+                var password = document.getElementById('password');
+                var password2 = document.getElementById('password2');
+
+                if (name == ''){
+                    alert('名稱不可空白');
+                }
+                if (password == "" || password2 == ""){
+                    alert("密碼不可空白");
+                }
+                if (password !== password2){
+                    alert("兩次密碼不同");
+                    return false;
+                }
+            }
+
+        </script>
     </div>
 </body>
 </html>
