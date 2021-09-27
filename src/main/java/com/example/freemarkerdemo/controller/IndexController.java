@@ -9,13 +9,15 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class IndexController {
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public String index(){
-        return "login";
+
+        return "index";
     }
 
     @RequestMapping("/register")
     public String register(){
+
         return "register";
     }
 }

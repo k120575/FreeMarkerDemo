@@ -45,22 +45,22 @@
                 </form>
             </div>
         </form>
-        <script type="text/javascript" language="JavaScript">
+        <script type="text/javascript">
             function check(){
                 var name = document.getElementsByName('name');
                 var password = document.getElementById('password');
                 var password2 = document.getElementById('password2');
 
-                if (name == ''){
-                    alert('名稱不可空白');
-                }
-                if (password == "" || password2 == ""){
-                    alert("密碼不可空白");
-                }
-                if (password !== password2){
-                    alert("兩次密碼不同");
-                    return false;
-                }
+                // if (name == ''){
+                //     alert('名稱不可空白');
+                // }
+                // if (password == "" || password2 == ""){
+                //     alert("密碼不可空白");
+                // }
+                // if (password !== password2){
+                //     alert("兩次密碼不同");
+                //     return false;
+                // }
             }
 
         </script>
