@@ -41,7 +41,7 @@
                 <!--<div id="hint"></div>-->
                 <#--            <button class="btn btn-primary btn-lg btn-block" type="button"  onclick="/addMember">註冊</button>-->
                 <form action="/demo/addMember" method="post">
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="註冊" onclick="check()">
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="註冊" >
                 </form>
             </div>
         </form>
