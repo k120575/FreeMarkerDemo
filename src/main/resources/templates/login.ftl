@@ -34,7 +34,7 @@
                     </i>
                 </button>
                 <form action="/demo/login" method="post">
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="登入">
+                    <input class="btn btn-primary btn-block" type="submit" value="登入">
                 </form>
             </div>
         </form>
